@@ -1,0 +1,783 @@
+0 verbose cli /usr/local/bin/node /usr/local/bin/npm
+1 info using npm@9.2.0
+2 info using node@v18.12.1
+3 timing npm:load:whichnode Completed in 0ms
+4 timing config:load:defaults Completed in 21ms
+5 timing config:load:file:/usr/local/lib/node_modules/npm/npmrc Completed in 1ms
+6 timing config:load:builtin Completed in 2ms
+7 timing config:load:cli Completed in 2ms
+8 timing config:load:env Completed in 1ms
+9 timing config:load:project Completed in 2ms
+10 timing config:load:file:/home/container/.npmrc Completed in 0ms
+11 timing config:load:user Completed in 0ms
+12 timing config:load:file:/usr/local/etc/npmrc Completed in 1ms
+13 timing config:load:global Completed in 1ms
+14 timing config:load:setEnvs Completed in 1ms
+15 timing config:load Completed in 30ms
+16 timing npm:load:configload Completed in 30ms
+17 timing npm:load:mkdirpcache Completed in 1ms
+18 timing npm:load:mkdirplogs Completed in 0ms
+19 verbose title npm install discord.js
+20 verbose argv "install" "discord.js"
+21 timing npm:load:setTitle Completed in 1ms
+22 timing config:load:flatten Completed in 3ms
+23 timing npm:load:display Completed in 4ms
+24 verbose logfile logs-max:10 dir:/home/container/.npm/_logs/2022-12-31T21_15_52_602Z-
+25 verbose logfile /home/container/.npm/_logs/2022-12-31T21_15_52_602Z-debug-0.log
+26 timing npm:load:logFile Completed in 7ms
+27 timing npm:load:timers Completed in 0ms
+28 timing npm:load:configScope Completed in 0ms
+29 timing npm:load Completed in 45ms
+30 silly logfile start cleaning logs, removing 1 files
+31 timing config:load:flatten Completed in 1ms
+32 timing arborist:ctor Completed in 1ms
+33 silly logfile done cleaning log files
+34 timing idealTree:init Completed in 845ms
+35 timing idealTree:userRequests Completed in 5ms
+36 silly idealTree buildDeps
+37 silly fetch manifest discord.js@^13.12.0
+38 timing arborist:ctor Completed in 1ms
+39 http fetch GET 200 https://registry.npmjs.org/discord.js 990ms (cache revalidated)
+40 silly placeDep ROOT discord.js@13.12.0 REPLACE for: system-bot-3@1.0.0 want: ^13.12.0
+41 timing idealTree:#root Completed in 1053ms
+42 timing idealTree:node_modules/discord.js Completed in 0ms
+43 timing idealTree:buildDeps Completed in 1055ms
+44 timing idealTree:fixDepFlags Completed in 39ms
+45 timing idealTree Completed in 1954ms
+46 timing reify:loadTrees Completed in 1956ms
+47 timing reify:diffTrees Completed in 21ms
+48 silly reify moves {}
+49 timing reify:retireShallow Completed in 2ms
+50 timing reify:createSparse Completed in 7ms
+51 timing reify:loadBundles Completed in 0ms
+52 silly audit bulk request {
+52 silly audit   '@androz2091/discord-invites-tracker': [ '1.2.3' ],
+52 silly audit   '@aws-crypto/ie11-detection': [ '2.0.2' ],
+52 silly audit   tslib: [ '1.14.1', '2.4.1' ],
+52 silly audit   '@aws-crypto/sha256-browser': [ '2.0.0' ],
+52 silly audit   '@aws-crypto/sha256-js': [ '2.0.0' ],
+52 silly audit   '@aws-crypto/supports-web-crypto': [ '2.0.2' ],
+52 silly audit   '@aws-crypto/util': [ '2.0.2' ],
+52 silly audit   '@aws-sdk/abort-controller': [ '3.222.0' ],
+52 silly audit   '@aws-sdk/client-cognito-identity': [ '3.222.0' ],
+52 silly audit   '@aws-sdk/client-sso': [ '3.222.0' ],
+52 silly audit   '@aws-sdk/client-sso-oidc': [ '3.222.0' ],
+52 silly audit   '@aws-sdk/client-sts': [ '3.222.0' ],
+52 silly audit   '@aws-sdk/config-resolver': [ '3.222.0' ],
+52 silly audit   '@aws-sdk/credential-provider-cognito-identity': [ '3.222.0' ],
+52 silly audit   '@aws-sdk/credential-provider-env': [ '3.222.0' ],
+52 silly audit   '@aws-sdk/credential-provider-imds': [ '3.222.0' ],
+52 silly audit   '@aws-sdk/credential-provider-ini': [ '3.222.0' ],
+52 silly audit   '@aws-sdk/credential-provider-node': [ '3.222.0' ],
+52 silly audit   '@aws-sdk/credential-provider-process': [ '3.222.0' ],
+52 silly audit   '@aws-sdk/credential-provider-sso': [ '3.222.0' ],
+52 silly audit   '@aws-sdk/credential-provider-web-identity': [ '3.222.0' ],
+52 silly audit   '@aws-sdk/credential-providers': [ '3.222.0' ],
+52 silly audit   '@aws-sdk/fetch-http-handler': [ '3.222.0' ],
+52 silly audit   '@aws-sdk/hash-node': [ '3.222.0' ],
+52 silly audit   '@aws-sdk/invalid-dependency': [ '3.222.0' ],
+52 silly audit   '@aws-sdk/is-array-buffer': [ '3.201.0' ],
+52 silly audit   '@aws-sdk/middleware-content-length': [ '3.222.0' ],
+52 silly audit   '@aws-sdk/middleware-endpoint': [ '3.222.0' ],
+52 silly audit   '@aws-sdk/middleware-host-header': [ '3.222.0' ],
+52 silly audit   '@aws-sdk/middleware-logger': [ '3.222.0' ],
+52 silly audit   '@aws-sdk/middleware-recursion-detection': [ '3.222.0' ],
+52 silly audit   '@aws-sdk/middleware-retry': [ '3.222.0' ],
+52 silly audit   '@aws-sdk/middleware-sdk-sts': [ '3.222.0' ],
+52 silly audit   '@aws-sdk/middleware-serde': [ '3.222.0' ],
+52 silly audit   '@aws-sdk/middleware-signing': [ '3.222.0' ],
+52 silly audit   '@aws-sdk/middleware-stack': [ '3.222.0' ],
+52 silly audit   '@aws-sdk/middleware-user-agent': [ '3.222.0' ],
+52 silly audit   '@aws-sdk/node-config-provider': [ '3.222.0' ],
+52 silly audit   '@aws-sdk/node-http-handler': [ '3.222.0' ],
+52 silly audit   '@aws-sdk/property-provider': [ '3.222.0' ],
+52 silly audit   '@aws-sdk/protocol-http': [ '3.222.0' ],
+52 silly audit   '@aws-sdk/querystring-builder': [ '3.222.0' ],
+52 silly audit   '@aws-sdk/querystring-parser': [ '3.222.0' ],
+52 silly audit   '@aws-sdk/service-error-classification': [ '3.222.0' ],
+52 silly audit   '@aws-sdk/shared-ini-file-loader': [ '3.222.0' ],
+52 silly audit   '@aws-sdk/signature-v4': [ '3.222.0' ],
+52 silly audit   '@aws-sdk/smithy-client': [ '3.222.0' ],
+52 silly audit   '@aws-sdk/token-providers': [ '3.222.0' ],
+52 silly audit   '@aws-sdk/types': [ '3.222.0' ],
+52 silly audit   '@aws-sdk/url-parser': [ '3.222.0' ],
+52 silly audit   '@aws-sdk/util-base64': [ '3.208.0' ],
+52 silly audit   '@aws-sdk/util-body-length-browser': [ '3.188.0' ],
+52 silly audit   '@aws-sdk/util-body-length-node': [ '3.208.0' ],
+52 silly audit   '@aws-sdk/util-buffer-from': [ '3.208.0' ],
+52 silly audit   '@aws-sdk/util-config-provider': [ '3.208.0' ],
+52 silly audit   '@aws-sdk/util-defaults-mode-browser': [ '3.222.0' ],
+52 silly audit   '@aws-sdk/util-defaults-mode-node': [ '3.222.0' ],
+52 silly audit   '@aws-sdk/util-endpoints': [ '3.222.0' ],
+52 silly audit   '@aws-sdk/util-hex-encoding': [ '3.201.0' ],
+52 silly audit   '@aws-sdk/util-locate-window': [ '3.208.0' ],
+52 silly audit   '@aws-sdk/util-middleware': [ '3.222.0' ],
+52 silly audit   '@aws-sdk/util-retry': [ '3.222.0' ],
+52 silly audit   '@aws-sdk/util-uri-escape': [ '3.201.0' ],
+52 silly audit   '@aws-sdk/util-user-agent-browser': [ '3.222.0' ],
+52 silly audit   '@aws-sdk/util-user-agent-node': [ '3.222.0' ],
+52 silly audit   '@aws-sdk/util-utf8-browser': [ '3.188.0' ],
+52 silly audit   '@aws-sdk/util-utf8-node': [ '3.208.0' ],
+52 silly audit   '@babel/runtime': [ '7.20.6' ],
+52 silly audit   '@derhuerst/http-basic': [ '8.2.4' ],
+52 silly audit   '@discordjs/builders': [ '0.16.0', '1.4.0' ],
+52 silly audit   'discord-api-types': [ '0.36.3', '0.37.20', '0.33.5', '0.22.0', '0.37.21' ],
+52 silly audit   '@discordjs/collection': [ '0.7.0', '1.3.0' ],
+52 silly audit   '@discordjs/rest': [ '1.4.0' ],
+52 silly audit   'file-type': [ '18.0.0', '9.0.0' ],
+52 silly audit   '@discordjs/util': [ '0.1.0' ],
+52 silly audit   '@discordjs/voice': [ '0.14.0', '0.6.0' ],
+52 silly audit   '@esbuild/linux-loong64': [ '0.14.54' ],
+52 silly audit   '@haileybot/captcha-generator': [ '1.7.0' ],
+52 silly audit   '@jimp/bmp': [ '0.16.2' ],
+52 silly audit   '@jimp/core': [ '0.16.2' ],
+52 silly audit   '@jimp/custom': [ '0.16.2' ],
+52 silly audit   '@jimp/gif': [ '0.16.2' ],
+52 silly audit   '@jimp/jpeg': [ '0.16.2' ],
+52 silly audit   '@jimp/plugin-blit': [ '0.16.2' ],
+52 silly audit   '@jimp/plugin-blur': [ '0.16.2' ],
+52 silly audit   '@jimp/plugin-circle': [ '0.16.2' ],
+52 silly audit   '@jimp/plugin-color': [ '0.16.2' ],
+52 silly audit   '@jimp/plugin-contain': [ '0.16.2' ],
+52 silly audit   '@jimp/plugin-cover': [ '0.16.2' ],
+52 silly audit   '@jimp/plugin-crop': [ '0.16.2' ],
+52 silly audit   '@jimp/plugin-displace': [ '0.16.2' ],
+52 silly audit   '@jimp/plugin-dither': [ '0.16.2' ],
+52 silly audit   '@jimp/plugin-fisheye': [ '0.16.2' ],
+52 silly audit   '@jimp/plugin-flip': [ '0.16.2' ],
+52 silly audit   '@jimp/plugin-gaussian': [ '0.16.2' ],
+52 silly audit   '@jimp/plugin-invert': [ '0.16.2' ],
+52 silly audit   '@jimp/plugin-mask': [ '0.16.2' ],
+52 silly audit   '@jimp/plugin-normalize': [ '0.16.2' ],
+52 silly audit   '@jimp/plugin-print': [ '0.16.2' ],
+52 silly audit   '@jimp/plugin-resize': [ '0.16.2' ],
+52 silly audit   '@jimp/plugin-rotate': [ '0.16.2' ],
+52 silly audit   '@jimp/plugin-scale': [ '0.16.2' ],
+52 silly audit   '@jimp/plugin-shadow': [ '0.16.2' ],
+52 silly audit   '@jimp/plugin-threshold': [ '0.16.2' ],
+52 silly audit   '@jimp/plugins': [ '0.16.2' ],
+52 silly audit   '@jimp/png': [ '0.16.2' ],
+52 silly audit   '@jimp/tiff': [ '0.16.2' ],
+52 silly audit   '@jimp/types': [ '0.16.2' ],
+52 silly audit   '@jimp/utils': [ '0.16.2' ],
+52 silly audit   '@mapbox/node-pre-gyp': [ '1.0.10' ],
+52 silly audit   '@napi-rs/canvas': [ '0.1.30' ],
+52 silly audit   '@napi-rs/canvas-android-arm64': [ '0.1.30' ],
+52 silly audit   '@napi-rs/canvas-darwin-arm64': [ '0.1.30' ],
+52 silly audit   '@napi-rs/canvas-darwin-x64': [ '0.1.30' ],
+52 silly audit   '@napi-rs/canvas-linux-arm-gnueabihf': [ '0.1.30' ],
+52 silly audit   '@napi-rs/canvas-linux-arm64-gnu': [ '0.1.30' ],
+52 silly audit   '@napi-rs/canvas-linux-arm64-musl': [ '0.1.30' ],
+52 silly audit   '@napi-rs/canvas-linux-x64-gnu': [ '0.1.30' ],
+52 silly audit   '@napi-rs/canvas-linux-x64-musl': [ '0.1.30' ],
+52 silly audit   '@napi-rs/canvas-win32-x64-msvc': [ '0.1.30' ],
+52 silly audit   '@nodelib/fs.scandir': [ '2.1.5' ],
+52 silly audit   '@nodelib/fs.stat': [ '2.0.5' ],
+52 silly audit   '@nodelib/fs.walk': [ '1.2.8' ],
+52 silly audit   '@replit/node-fetch': [ '3.1.0' ],
+52 silly audit   '@replit/repl-auth': [ '1.0.0' ],
+52 silly audit   '@sapphire/async-queue': [ '1.5.0' ],
+52 silly audit   '@sapphire/shapeshift': [ '3.7.1' ],
+52 silly audit   '@sapphire/snowflake': [ '3.2.2' ],
+52 silly audit   '@sindresorhus/is': [ '0.14.0' ],
+52 silly audit   '@skyra/gifenc': [ '1.0.1' ],
+52 silly audit   '@szmarczak/http-timer': [ '1.1.2' ],
+52 silly audit   '@tokenizer/token': [ '0.3.0' ],
+52 silly audit   '@types/body-parser': [ '1.19.2' ],
+52 silly audit   '@types/connect': [ '3.4.35' ],
+52 silly audit   '@types/express': [ '4.17.14' ],
+52 silly audit   '@types/express-serve-static-core': [ '4.17.31' ],
+52 silly audit   '@types/mime': [ '3.0.1' ],
+52 silly audit   '@types/node': [ '18.11.10', '10.17.60', '16.9.1' ],
+52 silly audit   '@types/node-fetch': [ '2.6.2' ],
+52 silly audit   'form-data': [ '3.0.1', '4.0.0' ],
+52 silly audit   '@types/qs': [ '6.9.7' ],
+52 silly audit   '@types/range-parser': [ '1.2.4' ],
+52 silly audit   '@types/serve-static': [ '1.15.0' ],
+52 silly audit   '@types/webidl-conversions': [ '7.0.0' ],
+52 silly audit   '@types/whatwg-url': [ '8.2.2' ],
+52 silly audit   '@types/ws': [ '8.5.3', '7.4.7' ],
+52 silly audit   '@vitalets/google-translate-api': [ '8.0.0' ],
+52 silly audit   '@vultr/vultr-node': [ '2.3.3' ],
+52 silly audit   abbrev: [ '1.1.1' ],
+52 silly audit   accepts: [ '1.3.8' ],
+52 silly audit   'agent-base': [ '6.0.2' ],
+52 silly audit   debug: [ '4.3.4', '2.6.9' ],
+52 silly audit   ms: [ '2.1.2', '2.0.0', '2.1.3' ],
+52 silly audit   'aki-api': [ '6.0.8' ],
+52 silly audit   axios: [ '0.21.4', '1.2.1' ],
+52 silly audit   'amethyste-api': [ '1.1.5' ],
+52 silly audit   'ansi-regex': [ '5.0.1', '4.1.1' ],
+52 silly audit   'ansi-styles': [ '4.3.0' ],
+52 silly audit   'any-base': [ '1.1.0' ],
+52 silly audit   'any-promise': [ '1.3.0' ],
+52 silly audit   anymatch: [ '3.1.3' ],
+52 silly audit   aproba: [ '2.0.0' ],
+52 silly audit   'are-we-there-yet': [ '2.0.0' ],
+52 silly audit   'array-flatten': [ '1.1.1' ],
+52 silly audit   'array-union': [ '2.1.0' ],
+52 silly audit   'ascii-table': [ '0.0.9' ],
+52 silly audit   asn1: [ '0.2.6' ],
+52 silly audit   asynckit: [ '0.4.0' ],
+52 silly audit   'balanced-match': [ '1.0.2' ],
+52 silly audit   'base64-js': [ '1.5.1' ],
+52 silly audit   'bcrypt-pbkdf': [ '1.0.2' ],
+52 silly audit   'better-sqlite3': [ '7.6.2' ],
+52 silly audit   'binary-extensions': [ '2.2.0' ],
+52 silly audit   bindings: [ '1.5.0' ],
+52 silly audit   bl: [ '4.1.0' ],
+52 silly audit   'bmp-js': [ '0.1.0' ],
+52 silly audit   'body-parser': [ '1.20.1' ],
+52 silly audit   boolbase: [ '1.0.0' ],
+52 silly audit   bowser: [ '2.11.0' ],
+52 silly audit   'brace-expansion': [ '2.0.1', '1.1.11' ],
+52 silly audit   braces: [ '3.0.2' ],
+52 silly audit   bson: [ '4.7.0' ],
+52 silly audit   buffer: [ '5.7.1' ],
+52 silly audit   'buffer-equal': [ '0.0.1' ],
+52 silly audit   'buffer-from': [ '1.1.2' ],
+52 silly audit   buildcheck: [ '0.0.3' ],
+52 silly audit   'bundle-require': [ '3.1.2' ],
+52 silly audit   busboy: [ '1.6.0' ],
+52 silly audit   bytes: [ '3.1.2' ],
+52 silly audit   cac: [ '6.7.14' ],
+52 silly audit   'cacheable-request': [ '6.1.0' ],
+52 silly audit   'get-stream': [ '5.2.0', '6.0.1', '4.1.0' ],
+52 silly audit   'lowercase-keys': [ '2.0.0', '1.0.1' ],
+52 silly audit   'call-bind': [ '1.0.2' ],
+52 silly audit   canvacord: [ '5.4.8' ],
+52 silly audit   chalk: [ '5.2.0', '4.1.2' ],
+52 silly audit   canvafy: [ '2.1.0' ],
+52 silly audit   canvas: [ '2.10.2' ],
+52 silly audit   caseless: [ '0.12.0' ],
+52 silly audit   cheerio: [ '1.0.0-rc.12' ],
+52 silly audit   'cheerio-select': [ '2.1.0' ],
+52 silly audit   chokidar: [ '3.5.3' ],
+52 silly audit   chownr: [ '2.0.0', '1.1.4' ],
+52 silly audit   'cli-table': [ '0.3.11' ],
+52 silly audit   colors: [ '1.0.3', '1.4.0' ],
+52 silly audit   'clone-response': [ '1.0.3' ],
+52 silly audit   'mimic-response': [ '1.0.1', '2.1.0', '3.1.0' ],
+52 silly audit   'color-convert': [ '2.0.1' ],
+52 silly audit   'color-name': [ '1.1.4' ],
+52 silly audit   'color-support': [ '1.1.3' ],
+52 silly audit   'combined-stream': [ '1.0.8' ],
+52 silly audit   commander: [ '4.1.1' ],
+52 silly audit   'concat-map': [ '0.0.1' ],
+52 silly audit   'concat-stream': [ '2.0.0' ],
+52 silly audit   configstore: [ '5.0.1' ],
+52 silly audit   'console-control-strings': [ '1.1.0' ],
+52 silly audit   'content-disposition': [ '0.5.4' ],
+52 silly audit   'content-type': [ '1.0.4' ],
+52 silly audit   cookie: [ '0.5.0' ],
+52 silly audit   'cookie-signature': [ '1.0.6' ],
+52 silly audit   'cpu-features': [ '0.0.4' ],
+52 silly audit   'cross-fetch': [ '3.1.5' ],
+52 silly audit   'cross-spawn': [ '7.0.3' ],
+52 silly audit   'crypto-random-string': [ '2.0.0' ],
+52 silly audit   'css-select': [ '5.1.0' ],
+52 silly audit   'css-what': [ '6.1.0' ],
+52 silly audit   'davie-convert': [ '2.0.2' ],
+52 silly audit   dayjs: [ '1.11.6' ],
+52 silly audit   'decompress-response': [ '4.2.1', '3.3.0', '6.0.0' ],
+52 silly audit   'deep-extend': [ '0.6.0' ],
+52 silly audit   'defer-to-connect': [ '1.1.3' ],
+52 silly audit   'delayed-stream': [ '1.0.0' ],
+52 silly audit   delegates: [ '1.0.0' ],
+52 silly audit   denque: [ '2.1.0' ],
+52 silly audit   depd: [ '2.0.0' ],
+52 silly audit   destroy: [ '1.2.0' ],
+52 silly audit   'detect-libc': [ '2.0.1' ],
+52 silly audit   'devtools-ts': [ '1.1.3' ],
+52 silly audit   'dir-glob': [ '3.0.1' ],
+52 silly audit   'discord-gamecord': [ '2.1.0' ],
+52 silly audit   'discord-image-generation': [ '1.4.15' ],
+52 silly audit   'discord-player': [ '5.1.0' ],
+52 silly audit   ws: [ '7.5.9', '8.11.0' ],
+52 silly audit   'discord-together': [ '1.3.31' ],
+52 silly audit   'discord.js': [ '14.7.1', '13.12.0' ],
+52 silly audit   'discord-ytdl-core': [ '5.0.4' ],
+52 silly audit   'discord.js-akinator': [ '4.0.4' ],
+52 silly audit   'dom-serializer': [ '2.0.0' ],
+52 silly audit   'dom-walk': [ '0.1.2' ],
+52 silly audit   domelementtype: [ '2.3.0' ],
+52 silly audit   domhandler: [ '5.0.3' ],
+52 silly audit   domutils: [ '3.0.1' ],
+52 silly audit   'dot-prop': [ '5.3.0' ],
+52 silly audit   duplexer3: [ '0.1.5' ],
+52 silly audit   'ee-first': [ '1.1.1' ],
+52 silly audit   'emoji-regex': [ '8.0.0' ],
+52 silly audit   encodeurl: [ '1.0.2' ],
+52 silly audit   'end-of-stream': [ '1.4.4' ],
+52 silly audit   entities: [ '4.4.0' ],
+52 silly audit   'env-paths': [ '2.2.1' ],
+52 silly audit   esbuild: [ '0.14.54' ],
+52 silly audit   'esbuild-android-64': [ '0.14.54' ],
+52 silly audit   'esbuild-android-arm64': [ '0.14.54' ],
+52 silly audit   'esbuild-darwin-64': [ '0.14.54' ],
+52 silly audit   'esbuild-darwin-arm64': [ '0.14.54' ],
+52 silly audit   'esbuild-freebsd-64': [ '0.14.54' ],
+52 silly audit   'esbuild-freebsd-arm64': [ '0.14.54' ],
+52 silly audit   'esbuild-linux-32': [ '0.14.54' ],
+52 silly audit   'esbuild-linux-64': [ '0.14.54' ],
+52 silly audit   'esbuild-linux-arm': [ '0.14.54' ],
+52 silly audit   'esbuild-linux-arm64': [ '0.14.54' ],
+52 silly audit   'esbuild-linux-mips64le': [ '0.14.54' ],
+52 silly audit   'esbuild-linux-ppc64le': [ '0.14.54' ],
+52 silly audit   'esbuild-linux-riscv64': [ '0.14.54' ],
+52 silly audit   'esbuild-linux-s390x': [ '0.14.54' ],
+52 silly audit   'esbuild-netbsd-64': [ '0.14.54' ],
+52 silly audit   'esbuild-openbsd-64': [ '0.14.54' ],
+52 silly audit   'esbuild-sunos-64': [ '0.14.54' ],
+52 silly audit   'esbuild-windows-32': [ '0.14.54' ],
+52 silly audit   'esbuild-windows-64': [ '0.14.54' ],
+52 silly audit   'esbuild-windows-arm64': [ '0.14.54' ],
+52 silly audit   'escape-html': [ '1.0.3' ],
+52 silly audit   etag: [ '1.8.1' ],
+52 silly audit   execa: [ '5.1.1' ],
+52 silly audit   'exif-parser': [ '0.1.12' ],
+52 silly audit   'expand-template': [ '2.0.3' ],
+52 silly audit   express: [ '4.18.2' ],
+52 silly audit   'fast-deep-equal': [ '3.1.3' ],
+52 silly audit   'fast-glob': [ '3.2.12' ],
+52 silly audit   'fast-xml-parser': [ '4.0.11' ],
+52 silly audit   fastq: [ '1.13.0' ],
+52 silly audit   'fetch-blob': [ '3.2.0' ],
+52 silly audit   'ffmpeg-static': [ '5.1.0' ],
+52 silly audit   'file-uri-to-path': [ '1.0.0' ],
+52 silly audit   'fill-range': [ '7.0.1' ],
+52 silly audit   finalhandler: [ '1.2.0' ],
+52 silly audit   'follow-redirects': [ '1.15.2' ],
+52 silly audit   'formdata-polyfill': [ '4.0.10' ],
+52 silly audit   forwarded: [ '0.2.0' ],
+52 silly audit   fresh: [ '0.5.2' ],
+52 silly audit   'fs-constants': [ '1.0.0' ],
+52 silly audit   'fs-minipass': [ '2.1.0' ],
+52 silly audit   'fs.realpath': [ '1.0.0' ],
+52 silly audit   fsevents: [ '2.3.2' ],
+52 silly audit   'function-bind': [ '1.1.1' ],
+52 silly audit   gauge: [ '3.0.2' ],
+52 silly audit   'get-intrinsic': [ '1.1.3' ],
+52 silly audit   gifencoder: [ '2.0.1' ],
+52 silly audit   gifwrap: [ '0.9.4' ],
+52 silly audit   'github-from-package': [ '0.0.0' ],
+52 silly audit   glob: [ '8.0.3', '7.2.3', '7.1.6' ],
+52 silly audit   'glob-parent': [ '5.1.2' ],
+52 silly audit   global: [ '4.4.0' ],
+52 silly audit   globby: [ '11.1.0' ],
+52 silly audit   got: [ '9.6.0' ],
+52 silly audit   'graceful-fs': [ '4.2.10' ],
+52 silly audit   has: [ '1.0.3' ],
+52 silly audit   'has-flag': [ '4.0.0' ],
+52 silly audit   'has-symbols': [ '1.0.3' ],
+52 silly audit   'has-unicode': [ '2.0.1' ],
+52 silly audit   himalaya: [ '1.1.0' ],
+52 silly audit   'html-entities': [ '2.3.3' ],
+52 silly audit   htmlparser2: [ '8.0.1' ],
+52 silly audit   'http-cache-semantics': [ '4.1.0' ],
+52 silly audit   'http-errors': [ '2.0.0' ],
+52 silly audit   'http-response-object': [ '3.0.2' ],
+52 silly audit   'https-proxy-agent': [ '5.0.1' ],
+52 silly audit   'human-signals': [ '2.1.0' ],
+52 silly audit   'iconv-lite': [ '0.4.24' ],
+52 silly audit   ieee754: [ '1.2.1' ],
+52 silly audit   ignore: [ '5.2.1' ],
+52 silly audit   'image-q': [ '4.0.0' ],
+52 silly audit   imurmurhash: [ '0.1.4' ],
+52 silly audit   inflight: [ '1.0.6' ],
+52 silly audit   inherits: [ '2.0.4' ],
+52 silly audit   ini: [ '1.3.8' ],
+52 silly audit   ip: [ '2.0.0' ],
+52 silly audit   'ipaddr.js': [ '1.9.1' ],
+52 silly audit   'is-binary-path': [ '2.1.0' ],
+52 silly audit   'is-extglob': [ '2.1.1' ],
+52 silly audit   'is-fullwidth-code-point': [ '3.0.0' ],
+52 silly audit   'is-function': [ '1.0.2' ],
+52 silly audit   'is-glob': [ '4.0.3' ],
+52 silly audit   'is-number': [ '7.0.0' ],
+52 silly audit   'is-obj': [ '2.0.0' ],
+52 silly audit   'is-stream': [ '2.0.1' ],
+52 silly audit   'is-typedarray': [ '1.0.0' ],
+52 silly audit   isexe: [ '2.0.0' ],
+52 silly audit   jikanjs: [ '0.7.0' ],
+52 silly audit   jimp: [ '0.16.2' ],
+52 silly audit   joycon: [ '3.1.1' ],
+52 silly audit   'jpeg-js': [ '0.4.4' ],
+52 silly audit   'json-buffer': [ '3.0.0' ],
+52 silly audit   'jsonc-parser': [ '3.2.0' ],
+52 silly audit   kareem: [ '2.4.1' ],
+52 silly audit   keyv: [ '3.1.0' ],
+52 silly audit   libsodium: [ '0.7.10' ],
+52 silly audit   'libsodium-wrappers': [ '0.7.10' ],
+52 silly audit   lilconfig: [ '2.0.6' ],
+52 silly audit   'lines-and-columns': [ '1.2.4' ],
+52 silly audit   'load-bmfont': [ '1.4.1' ],
+52 silly audit   'load-tsconfig': [ '0.2.3' ],
+52 silly audit   lodash: [ '4.17.21' ],
+52 silly audit   'lodash.snakecase': [ '4.1.1' ],
+52 silly audit   'lodash.sortby': [ '4.7.0' ],
+52 silly audit   'lodash.uniqwith': [ '4.5.0' ],
+52 silly audit   'lru-cache': [ '6.0.0' ],
+52 silly audit   lunr: [ '2.3.9' ],
+52 silly audit   m3u8stream: [ '0.8.6' ],
+52 silly audit   'make-dir': [ '3.1.0' ],
+52 silly audit   semver: [ '6.3.0', '7.3.8' ],
+52 silly audit   marked: [ '4.2.3' ],
+52 silly audit   'media-typer': [ '0.3.0' ],
+52 silly audit   'memory-pager': [ '1.5.0' ],
+52 silly audit   'merge-descriptors': [ '1.0.1' ],
+52 silly audit   'merge-stream': [ '2.0.0' ],
+52 silly audit   merge2: [ '1.4.1' ],
+52 silly audit   methods: [ '1.1.2' ],
+52 silly audit   micromatch: [ '4.0.5' ],
+52 silly audit   mime: [ '1.6.0' ],
+52 silly audit   'mime-db': [ '1.52.0' ],
+52 silly audit   'mime-types': [ '2.1.35' ],
+52 silly audit   'mimic-fn': [ '2.1.0' ],
+52 silly audit   'min-document': [ '2.19.0' ],
+52 silly audit   miniget: [ '4.2.2' ],
+52 silly audit   minimatch: [ '5.1.1', '3.1.2' ],
+52 silly audit   minimist: [ '1.2.7' ],
+52 silly audit   minipass: [ '3.3.6' ],
+52 silly audit   minizlib: [ '2.1.2' ],
+52 silly audit   mkdirp: [ '0.5.6', '1.0.4' ],
+52 silly audit   'mkdirp-classic': [ '0.5.3' ],
+52 silly audit   moment: [ '2.29.4' ],
+52 silly audit   'moment-duration-format': [ '2.3.2' ],
+52 silly audit   mongodb: [ '4.11.0' ],
+52 silly audit   'mongodb-connection-string-url': [ '2.6.0' ],
+52 silly audit   mongoose: [ '6.7.5' ],
+52 silly audit   mpath: [ '0.9.0' ],
+52 silly audit   mquery: [ '4.0.3' ],
+52 silly audit   mz: [ '2.7.0' ],
+52 silly audit   nan: [ '2.17.0' ],
+52 silly audit   naotori: [ '1.1.1' ],
+52 silly audit   'napi-build-utils': [ '1.0.2' ],
+52 silly audit   negotiator: [ '0.6.3' ],
+52 silly audit   'node-abi': [ '3.30.0' ],
+52 silly audit   'node-domexception': [ '1.0.0' ],
+52 silly audit   'node-fetch': [ '2.6.7' ],
+52 silly audit   tr46: [ '0.0.3', '1.0.1', '3.0.0' ],
+52 silly audit   'webidl-conversions': [ '3.0.1', '4.0.2', '7.0.0' ],
+52 silly audit   'whatwg-url': [ '5.0.0', '7.1.0', '11.0.0' ],
+52 silly audit   'node-ssh': [ '12.0.5' ],
+52 silly audit   nopt: [ '5.0.0' ],
+52 silly audit   'normalize-path': [ '3.0.0' ],
+52 silly audit   'normalize-url': [ '4.5.1' ],
+52 silly audit   'npm-run-path': [ '4.0.1' ],
+52 silly audit   npmlog: [ '5.0.1' ],
+52 silly audit   'nth-check': [ '2.1.1' ],
+52 silly audit   'object-assign': [ '4.1.1' ],
+52 silly audit   'object-inspect': [ '1.12.2' ],
+52 silly audit   omggif: [ '1.0.10' ],
+52 silly audit   'on-finished': [ '2.4.1' ],
+52 silly audit   once: [ '1.4.0' ],
+52 silly audit   onetime: [ '5.1.2' ],
+52 silly audit   opusscript: [ '0.0.8' ],
+52 silly audit   'p-cancelable': [ '1.1.0' ],
+52 silly audit   pako: [ '1.0.11' ],
+52 silly audit   'parse-bmfont-ascii': [ '1.0.6' ],
+52 silly audit   'parse-bmfont-binary': [ '1.0.6' ],
+52 silly audit   'parse-bmfont-xml': [ '1.1.4' ],
+52 silly audit   'parse-cache-control': [ '1.0.1' ],
+52 silly audit   'parse-headers': [ '2.0.5' ],
+52 silly audit   'parse-ms': [ '2.1.0' ],
+52 silly audit   parse5: [ '7.1.2' ],
+52 silly audit   'parse5-htmlparser2-tree-adapter': [ '7.0.0' ],
+52 silly audit   parseurl: [ '1.3.3' ],
+52 silly audit   'path-is-absolute': [ '1.0.1' ],
+52 silly audit   'path-key': [ '3.1.1' ],
+52 silly audit   'path-to-regexp': [ '0.1.7' ],
+52 silly audit   'path-type': [ '4.0.0' ],
+52 silly audit   'peek-readable': [ '5.0.0' ],
+52 silly audit   phin: [ '2.9.3' ],
+52 silly audit   picomatch: [ '2.3.1' ],
+52 silly audit   pirates: [ '4.0.5' ],
+52 silly audit   pixelmatch: [ '4.0.2' ],
+52 silly audit   'play-audio': [ '0.5.2' ],
+52 silly audit   'play-dl': [ '1.9.6' ],
+52 silly audit   pngjs: [ '3.4.0' ],
+52 silly audit   'postcss-load-config': [ '3.1.4' ],
+52 silly audit   'prebuild-install': [ '7.1.1' ],
+52 silly audit   'simple-get': [ '4.0.1', '3.1.1' ],
+52 silly audit   'prepend-http': [ '2.0.0' ],
+52 silly audit   'pretty-ms': [ '7.0.1' ],
+52 silly audit   'prism-media': [ '1.3.4' ],
+52 silly audit   'pro.db': [ '3.0.8' ],
+52 silly audit   process: [ '0.11.10' ],
+52 silly audit   progress: [ '2.0.3' ],
+52 silly audit   'prompt-sync': [ '4.2.0' ],
+52 silly audit   'strip-ansi': [ '5.2.0', '6.0.1' ],
+52 silly audit   'proxy-addr': [ '2.0.7' ],
+52 silly audit   'proxy-from-env': [ '1.1.0' ],
+52 silly audit   pump: [ '3.0.0' ],
+52 silly audit   punycode: [ '2.1.1' ],
+52 silly audit   qs: [ '6.11.0' ],
+52 silly audit   'queue-microtask': [ '1.2.3' ],
+52 silly audit   'quick.db': [ '7.1.3' ],
+52 silly audit   'range-parser': [ '1.2.1' ],
+52 silly audit   'raw-body': [ '2.5.1' ],
+52 silly audit   rc: [ '1.2.8' ],
+52 silly audit   'readable-stream': [ '3.6.0' ],
+52 silly audit   'readable-web-to-node-stream': [ '3.0.2' ],
+52 silly audit   readdirp: [ '3.6.0' ],
+52 silly audit   'regenerator-runtime': [ '0.13.11' ],
+52 silly audit   'resolve-from': [ '5.0.0' ],
+52 silly audit   responselike: [ '1.0.2' ],
+52 silly audit   reusify: [ '1.0.4' ],
+52 silly audit   rimraf: [ '3.0.2' ],
+52 silly audit   rollup: [ '2.79.1' ],
+52 silly audit   'run-parallel': [ '1.2.0' ],
+52 silly audit   'safe-buffer': [ '5.2.1' ],
+52 silly audit   'safer-buffer': [ '2.1.2' ],
+52 silly audit   saslprep: [ '1.0.3' ],
+52 silly audit   sax: [ '1.2.4' ],
+52 silly audit   'sb-promise-queue': [ '2.1.0' ],
+52 silly audit   'sb-scandir': [ '3.1.0' ],
+52 silly audit   send: [ '0.18.0' ],
+52 silly audit   'serve-static': [ '1.15.0' ],
+52 silly audit   'set-blocking': [ '2.0.0' ],
+52 silly audit   setprototypeof: [ '1.2.0' ],
+52 silly audit   'shebang-command': [ '2.0.0' ],
+52 silly audit   'shebang-regex': [ '3.0.0' ],
+52 silly audit   'shell-escape': [ '0.2.0' ],
+52 silly audit   shiki: [ '0.10.1' ],
+52 silly audit   'side-channel': [ '1.0.4' ],
+52 silly audit   sift: [ '16.0.1' ],
+52 silly audit   'signal-exit': [ '3.0.7' ],
+52 silly audit   'simple-concat': [ '1.0.1' ],
+52 silly audit   slash: [ '3.0.0' ],
+52 silly audit   'smart-buffer': [ '4.2.0' ],
+52 silly audit   socks: [ '2.7.1' ],
+52 silly audit   'soundcloud-scraper': [ '5.0.3' ],
+52 silly audit   'source-map': [ '0.8.0-beta.0' ],
+52 silly audit   'sparse-bitfield': [ '3.0.3' ],
+52 silly audit   'spotify-uri': [ '2.2.2' ],
+52 silly audit   'spotify-url-info': [ '2.2.9' ],
+52 silly audit   ssh2: [ '1.11.0' ],
+52 silly audit   statuses: [ '2.0.1' ],
+52 silly audit   streamsearch: [ '1.1.0' ],
+52 silly audit   string_decoder: [ '1.3.0' ],
+52 silly audit   'string-width': [ '4.2.3' ],
+52 silly audit   'strip-final-newline': [ '2.0.0' ],
+52 silly audit   'strip-json-comments': [ '2.0.1' ],
+52 silly audit   strnum: [ '1.0.5' ],
+52 silly audit   strtok3: [ '7.0.0' ],
+52 silly audit   sucrase: [ '3.29.0' ],
+52 silly audit   'supports-color': [ '7.2.0' ],
+52 silly audit   tar: [ '6.1.12' ],
+52 silly audit   'tar-fs': [ '2.1.1' ],
+52 silly audit   'tar-stream': [ '2.2.0' ],
+52 silly audit   thenify: [ '3.3.1' ],
+52 silly audit   'thenify-all': [ '1.6.0' ],
+52 silly audit   timm: [ '1.7.1' ],
+52 silly audit   'tiny-typed-emitter': [ '2.1.0' ],
+52 silly audit   tinycolor2: [ '1.4.2' ],
+52 silly audit   'to-readable-stream': [ '1.0.0' ],
+52 silly audit   'to-regex-range': [ '5.0.1' ],
+52 silly audit   toidentifier: [ '1.0.1' ],
+52 silly audit   'token-types': [ '5.0.1' ],
+52 silly audit   'tree-kill': [ '1.2.2' ],
+52 silly audit   'ts-interface-checker': [ '0.1.13' ],
+52 silly audit   'ts-mixer': [ '6.0.2' ],
+52 silly audit   tsup: [ '5.12.9' ],
+52 silly audit   'tunnel-agent': [ '0.6.0' ],
+52 silly audit   tweetnacl: [ '0.14.5' ],
+52 silly audit   'type-is': [ '1.6.18' ],
+52 silly audit   typedarray: [ '0.0.6' ],
+52 silly audit   'typedarray-to-buffer': [ '3.1.5' ],
+52 silly audit   typedoc: [ '0.22.18' ],
+52 silly audit   'typedoc-plugin-missing-exports': [ '0.22.6' ],
+52 silly audit   typescript: [ '4.7.4' ],
+52 silly audit   undici: [ '5.13.0' ],
+52 silly audit   'unique-string': [ '2.0.0' ],
+52 silly audit   unpipe: [ '1.0.0' ],
+52 silly audit   'url-parse-lax': [ '3.0.0' ],
+52 silly audit   utif: [ '2.0.1' ],
+52 silly audit   'util-deprecate': [ '1.0.2' ],
+52 silly audit   'utils-merge': [ '1.0.1' ],
+52 silly audit   uuid: [ '8.3.2' ],
+52 silly audit   vary: [ '1.1.2' ],
+52 silly audit   'vscode-oniguruma': [ '1.7.0' ],
+52 silly audit   'vscode-textmate': [ '5.2.0' ],
+52 silly audit   'web-streams-polyfill': [ '3.2.1' ],
+52 silly audit   which: [ '2.0.2' ],
+52 silly audit   'wide-align': [ '1.1.5' ],
+52 silly audit   wrappy: [ '1.0.2' ],
+52 silly audit   'write-file-atomic': [ '3.0.3' ],
+52 silly audit   'xdg-basedir': [ '4.0.0' ],
+52 silly audit   xhr: [ '2.6.0' ],
+52 silly audit   'xml-parse-from-string': [ '1.0.1' ],
+52 silly audit   xml2js: [ '0.4.23' ],
+52 silly audit   xmlbuilder: [ '11.0.1' ],
+52 silly audit   xtend: [ '4.0.2' ],
+52 silly audit   yallist: [ '4.0.0' ],
+52 silly audit   yaml: [ '1.10.2' ],
+52 silly audit   'youtube-sr': [ '4.3.4' ],
+52 silly audit   'ytdl-core': [ '4.11.2' ]
+52 silly audit }
+53 verbose reify failed optional dependency /home/container/node_modules/fsevents
+54 silly reify mark deleted [ '/home/container/node_modules/fsevents' ]
+55 verbose reify failed optional dependency /home/container/node_modules/esbuild-windows-arm64
+56 silly reify mark deleted [ '/home/container/node_modules/esbuild-windows-arm64' ]
+57 verbose reify failed optional dependency /home/container/node_modules/esbuild-windows-64
+58 silly reify mark deleted [ '/home/container/node_modules/esbuild-windows-64' ]
+59 verbose reify failed optional dependency /home/container/node_modules/esbuild-windows-32
+60 silly reify mark deleted [ '/home/container/node_modules/esbuild-windows-32' ]
+61 verbose reify failed optional dependency /home/container/node_modules/esbuild-sunos-64
+62 silly reify mark deleted [ '/home/container/node_modules/esbuild-sunos-64' ]
+63 verbose reify failed optional dependency /home/container/node_modules/esbuild-openbsd-64
+64 silly reify mark deleted [ '/home/container/node_modules/esbuild-openbsd-64' ]
+65 verbose reify failed optional dependency /home/container/node_modules/esbuild-netbsd-64
+66 silly reify mark deleted [ '/home/container/node_modules/esbuild-netbsd-64' ]
+67 verbose reify failed optional dependency /home/container/node_modules/esbuild-linux-s390x
+68 silly reify mark deleted [ '/home/container/node_modules/esbuild-linux-s390x' ]
+69 verbose reify failed optional dependency /home/container/node_modules/esbuild-linux-riscv64
+70 silly reify mark deleted [ '/home/container/node_modules/esbuild-linux-riscv64' ]
+71 verbose reify failed optional dependency /home/container/node_modules/esbuild-linux-ppc64le
+72 silly reify mark deleted [ '/home/container/node_modules/esbuild-linux-ppc64le' ]
+73 verbose reify failed optional dependency /home/container/node_modules/esbuild-linux-mips64le
+74 silly reify mark deleted [ '/home/container/node_modules/esbuild-linux-mips64le' ]
+75 verbose reify failed optional dependency /home/container/node_modules/esbuild-linux-arm64
+76 silly reify mark deleted [ '/home/container/node_modules/esbuild-linux-arm64' ]
+77 verbose reify failed optional dependency /home/container/node_modules/esbuild-linux-arm
+78 silly reify mark deleted [ '/home/container/node_modules/esbuild-linux-arm' ]
+79 verbose reify failed optional dependency /home/container/node_modules/esbuild-linux-32
+80 silly reify mark deleted [ '/home/container/node_modules/esbuild-linux-32' ]
+81 verbose reify failed optional dependency /home/container/node_modules/esbuild-freebsd-arm64
+82 silly reify mark deleted [ '/home/container/node_modules/esbuild-freebsd-arm64' ]
+83 verbose reify failed optional dependency /home/container/node_modules/esbuild-freebsd-64
+84 silly reify mark deleted [ '/home/container/node_modules/esbuild-freebsd-64' ]
+85 verbose reify failed optional dependency /home/container/node_modules/esbuild-darwin-arm64
+86 silly reify mark deleted [ '/home/container/node_modules/esbuild-darwin-arm64' ]
+87 verbose reify failed optional dependency /home/container/node_modules/esbuild-darwin-64
+88 silly reify mark deleted [ '/home/container/node_modules/esbuild-darwin-64' ]
+89 verbose reify failed optional dependency /home/container/node_modules/esbuild-android-arm64
+90 silly reify mark deleted [ '/home/container/node_modules/esbuild-android-arm64' ]
+91 verbose reify failed optional dependency /home/container/node_modules/esbuild-android-64
+92 silly reify mark deleted [ '/home/container/node_modules/esbuild-android-64' ]
+93 verbose reify failed optional dependency /home/container/node_modules/@napi-rs/canvas-win32-x64-msvc
+94 silly reify mark deleted [ '/home/container/node_modules/@napi-rs/canvas-win32-x64-msvc' ]
+95 verbose reify failed optional dependency /home/container/node_modules/@napi-rs/canvas-linux-arm64-musl
+96 silly reify mark deleted [ '/home/container/node_modules/@napi-rs/canvas-linux-arm64-musl' ]
+97 verbose reify failed optional dependency /home/container/node_modules/@napi-rs/canvas-linux-arm64-gnu
+98 silly reify mark deleted [ '/home/container/node_modules/@napi-rs/canvas-linux-arm64-gnu' ]
+99 verbose reify failed optional dependency /home/container/node_modules/@napi-rs/canvas-linux-arm-gnueabihf
+100 silly reify mark deleted [ '/home/container/node_modules/@napi-rs/canvas-linux-arm-gnueabihf' ]
+101 verbose reify failed optional dependency /home/container/node_modules/@napi-rs/canvas-darwin-x64
+102 silly reify mark deleted [ '/home/container/node_modules/@napi-rs/canvas-darwin-x64' ]
+103 verbose reify failed optional dependency /home/container/node_modules/@napi-rs/canvas-darwin-arm64
+104 silly reify mark deleted [ '/home/container/node_modules/@napi-rs/canvas-darwin-arm64' ]
+105 verbose reify failed optional dependency /home/container/node_modules/@napi-rs/canvas-android-arm64
+106 silly reify mark deleted [ '/home/container/node_modules/@napi-rs/canvas-android-arm64' ]
+107 verbose reify failed optional dependency /home/container/node_modules/@esbuild/linux-loong64
+108 silly reify mark deleted [ '/home/container/node_modules/@esbuild/linux-loong64' ]
+109 timing reifyNode:node_modules/fsevents Completed in 18ms
+110 timing reifyNode:node_modules/esbuild-windows-arm64 Completed in 17ms
+111 timing reifyNode:node_modules/esbuild-windows-64 Completed in 17ms
+112 timing reifyNode:node_modules/esbuild-windows-32 Completed in 17ms
+113 timing reifyNode:node_modules/esbuild-sunos-64 Completed in 17ms
+114 timing reifyNode:node_modules/esbuild-openbsd-64 Completed in 17ms
+115 timing reifyNode:node_modules/esbuild-netbsd-64 Completed in 16ms
+116 timing reifyNode:node_modules/esbuild-linux-s390x Completed in 16ms
+117 timing reifyNode:node_modules/esbuild-linux-riscv64 Completed in 16ms
+118 timing reifyNode:node_modules/esbuild-linux-ppc64le Completed in 15ms
+119 timing reifyNode:node_modules/esbuild-linux-mips64le Completed in 16ms
+120 timing reifyNode:node_modules/esbuild-linux-arm64 Completed in 16ms
+121 timing reifyNode:node_modules/esbuild-linux-arm Completed in 16ms
+122 timing reifyNode:node_modules/esbuild-linux-32 Completed in 16ms
+123 timing reifyNode:node_modules/esbuild-freebsd-arm64 Completed in 16ms
+124 timing reifyNode:node_modules/esbuild-freebsd-64 Completed in 15ms
+125 timing reifyNode:node_modules/esbuild-darwin-arm64 Completed in 13ms
+126 timing reifyNode:node_modules/esbuild-darwin-64 Completed in 13ms
+127 timing reifyNode:node_modules/esbuild-android-arm64 Completed in 13ms
+128 timing reifyNode:node_modules/esbuild-android-64 Completed in 13ms
+129 timing reifyNode:node_modules/@napi-rs/canvas-win32-x64-msvc Completed in 13ms
+130 timing reifyNode:node_modules/@napi-rs/canvas-linux-arm64-musl Completed in 12ms
+131 timing reifyNode:node_modules/@napi-rs/canvas-linux-arm64-gnu Completed in 12ms
+132 timing reifyNode:node_modules/@napi-rs/canvas-linux-arm-gnueabihf Completed in 12ms
+133 timing reifyNode:node_modules/@napi-rs/canvas-darwin-x64 Completed in 12ms
+134 timing reifyNode:node_modules/@napi-rs/canvas-darwin-arm64 Completed in 12ms
+135 timing reifyNode:node_modules/@napi-rs/canvas-android-arm64 Completed in 12ms
+136 timing reifyNode:node_modules/@esbuild/linux-loong64 Completed in 12ms
+137 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 447ms
+138 timing auditReport:getReport Completed in 466ms
+139 silly audit report {
+139 silly audit report   got: [
+139 silly audit report     {
+139 silly audit report       id: 1080920,
+139 silly audit report       url: 'https://github.com/advisories/GHSA-pfrx-2q88-qq97',
+139 silly audit report       title: 'Got allows a redirect to a UNIX socket',
+139 silly audit report       severity: 'moderate',
+139 silly audit report       vulnerable_versions: '<11.8.5',
+139 silly audit report       cwe: [],
+139 silly audit report       cvss: [Object]
+139 silly audit report     }
+139 silly audit report   ]
+139 silly audit report }
+140 timing metavuln:cache:get:security-advisory:got:VDAqdWeBprXIM3ID/tj0yOqinr2LIY3dglkA/C/aM/Y9MNOK816kL4DQvwHiY6OuV+J0HRHAYvZDHl0QaZw/Og== Completed in 9ms
+141 http fetch GET 200 https://registry.npmjs.org/got 45ms (cache revalidated)
+142 timing metavuln:packument:got Completed in 50ms
+143 timing metavuln:load:security-advisory:got:1080920 Completed in 3ms
+144 timing metavuln:calculate:security-advisory:got:1080920 Completed in 54ms
+145 timing metavuln:cache:get:security-advisory:@vitalets/google-translate-api:/Z/wRhwqrOfueOMkSx14ndllmhoIH8ezWSWX7/+dbl7IbvwImKMs1H1Galq09lGblv0+3zjfFsIuDrq4iAboTg== Completed in 5ms
+146 timing reifyNode:node_modules/@napi-rs/canvas-linux-x64-musl Completed in 563ms
+147 timing reify:unpack Completed in 571ms
+148 timing reify:unretire Completed in 0ms
+149 timing build:queue Completed in 4ms
+150 info run @napi-rs/canvas-linux-x64-musl@0.1.30 install node_modules/@napi-rs/canvas-linux-x64-musl node install.js
+151 info run @napi-rs/canvas-linux-x64-musl@0.1.30 install { code: 1, signal: null }
+152 verbose reify failed optional dependency /home/container/node_modules/@napi-rs/canvas-linux-x64-musl
+153 silly reify mark deleted [ '/home/container/node_modules/@napi-rs/canvas-linux-x64-musl' ]
+154 timing build:run:install:node_modules/@napi-rs/canvas-linux-x64-musl Completed in 183ms
+155 timing build:run:install Completed in 184ms
+156 timing build:deps Completed in 188ms
+157 timing build Completed in 188ms
+158 timing reify:build Completed in 189ms
+159 timing reify:trash Completed in 11ms
+160 timing reify:save Completed in 276ms
+161 http fetch GET 200 https://registry.npmjs.org/@vitalets%2fgoogle-translate-api 1398ms (cache revalidated)
+162 timing metavuln:packument:@vitalets/google-translate-api Completed in 1398ms
+163 timing metavuln:load:security-advisory:@vitalets/google-translate-api:VDAqdWeBprXIM3ID/tj0yOqinr2LIY3dglkA/C/aM/Y9MNOK816kL4DQvwHiY6OuV+J0HRHAYvZDHl0QaZw/Og== Completed in 0ms
+164 timing metavuln:calculate:security-advisory:@vitalets/google-translate-api:VDAqdWeBprXIM3ID/tj0yOqinr2LIY3dglkA/C/aM/Y9MNOK816kL4DQvwHiY6OuV+J0HRHAYvZDHl0QaZw/Og== Completed in 1399ms
+165 timing metavuln:cache:get:security-advisory:discord.js-akinator:+8eGWUqqm+LhE1LxZzi7pic0wpfxNA5QNgUnwGFEkc//lc70QOhWcBgHM2SQW4UJw0kNj4qnThnfHiRI2S1MPA== Completed in 4ms
+166 http fetch GET 200 https://registry.npmjs.org/discord.js-akinator 713ms (cache revalidated)
+167 timing metavuln:packument:discord.js-akinator Completed in 714ms
+168 timing metavuln:load:security-advisory:discord.js-akinator:/Z/wRhwqrOfueOMkSx14ndllmhoIH8ezWSWX7/+dbl7IbvwImKMs1H1Galq09lGblv0+3zjfFsIuDrq4iAboTg== Completed in 0ms
+169 timing metavuln:calculate:security-advisory:discord.js-akinator:/Z/wRhwqrOfueOMkSx14ndllmhoIH8ezWSWX7/+dbl7IbvwImKMs1H1Galq09lGblv0+3zjfFsIuDrq4iAboTg== Completed in 715ms
+170 timing auditReport:init Completed in 2187ms
+171 timing reify:audit Completed in 2655ms
+172 timing reify Completed in 4650ms
+173 silly ADD
+174 silly ADD
+175 silly ADD
+176 silly ADD
+177 silly ADD
+178 silly ADD
+179 silly ADD
+180 silly ADD
+181 silly ADD
+182 silly ADD
+183 silly ADD
+184 silly ADD
+185 silly ADD
+186 silly ADD
+187 silly ADD
+188 silly ADD
+189 silly ADD
+190 silly ADD
+191 silly ADD
+192 silly ADD
+193 silly ADD
+194 silly ADD
+195 silly ADD
+196 silly ADD
+197 silly ADD
+198 silly ADD
+199 silly ADD
+200 silly ADD
+201 silly ADD
+202 timing command:install Completed in 4687ms
+203 verbose exit 0
+204 timing npm Completed in 4788ms
+205 info ok

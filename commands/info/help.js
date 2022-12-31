@@ -93,22 +93,20 @@ module.exports = {
         .addComponents(
             new MessageButton()
   .setStyle('LINK')
-  .setLabel('Invite Bot')
-  .setURL(`https://discord.com/oauth2/authorize?client_id=${client.user.id}&permissions=8&scope=bot%20applications.commands`))
+  .setLabel('TAD Community')
+  .setURL(`https://discord.gg/tw2MFH5UJu`))
     
        .addComponents(
             new MessageButton()
   .setStyle('LINK')
-  .setLabel('Server Support')
-  .setURL(`https://discord.gg/WxGZK8SsxM`))
+  .setLabel('TAD Community')
+  .setURL(`https://discord.gg/tw2MFH5UJu`))
       
     let embed = new MessageEmbed()    
       
-    .setDescription(`**i am developer, have a big experience for programming,  discord bots
-    
-github: https://github.com/YoussefWahba0/**`)
+    .setDescription(`**TAD Community**`)
 
-      .setImage(`https://media.discordapp.net/attachments/1034202662079569981/1050813365099954307/dev_snow_back.png`)
+      .setImage(`https://cdn.discordapp.com/attachments/1054525189431504916/1058145535015518308/7a1d6bc97d953af3844fe377ffa748b5.png`)
 
 .setColor(message.guild.me.displayHexColor)
       .setTimestamp()

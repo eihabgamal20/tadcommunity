@@ -8,6 +8,8 @@ const { Message, Client } = require("discord.js");
 
 module.exports = {
     name: "ban",
+      aliases: ['بند'],
+
     description: `Bans a memeber.`,
     async execute(client, message, args) {
            

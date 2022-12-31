@@ -7,6 +7,8 @@
 
 module.exports = {
         name: "move",
+      aliases: ['سحب'],
+
         description: `Moves a member to another voice channel.`,
   async execute(client, message, args) {
 

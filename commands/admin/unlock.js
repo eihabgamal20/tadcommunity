@@ -9,6 +9,8 @@ const { Message, Client } = require("discord.js");
 
 module.exports = {
         name: "unlock",
+          aliases: ['فتح'],
+
         description: `Allows everyone to send messages in specific channel.`,
   async execute(client, message, args) {
 

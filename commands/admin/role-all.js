@@ -9,6 +9,8 @@ const { Message, Client, MessageEmbed } = require("discord.js");
 
 module.exports = {
         name: "role-all",
+      aliases: ['رول للجميع'],
+
         description: `Add a roles for a user.`,
   async execute(client, message, args) {
 

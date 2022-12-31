@@ -30,26 +30,28 @@ module.exports = {
   /////////لتغير محتوي رسالة الايمبيد\\\\\\\\\\
   embeds: {
     Title: `Welcome to [server]`,
-    color: "#f33838",
+    color: "#6e6cfe",
     description: `Hello [user]`,
     img: "https://media.discordapp.net/attachments/965806495109369926/1043995134221619270/unknown.png",
     thumbnail: "[avatar_user]",//يدعم ايضا لينك  [avatar_user]  يدعم [server_icon]  ,و ديعم   
     Author: "[server]",
     Author_icon: "[server_icon]",//////يمكن يستبدل  باستخدام لينك 
-    Footer: `TAD`,
+    Footer: `Thanks for using the bot Developer tools`,
     Footer_icon: "https://media.discordapp.net/attachments/965806495109369926/1043995134221619270/unknown.png"
   },
 
   ////////////لتغير محتور رسالة  الصورة\\\\\\\\\\\\
 
   msg: {
-    message: `**Hello [user] Welcome to [server] You are  [memberCount]**`,
-    background: "https://media.discordapp.net/attachments/965806495109369926/1043972971745779732/back.jpg",
+    message: `**[user] أهلا وسهلا بك في سيرفر[server] 
+    الداعي [inviter]
+     الرجاء منك قراه القوانين أولا <#910200084245913621>**`,
+    background: "https://cdn.discordapp.com/attachments/852954310916046868/1058074744588619806/back.png",
     title: `WELCOME`,
     message_img: `[userName]`,
     Border: 0.3,///لازالة  نضع القيمة (0.01)
     color_AvatarBorder: "#ffffff",
-    color_Border: "#ffffff"
+    color_Border: "#6e6cfe"
   }
 
 }

@@ -21,6 +21,7 @@
     "amethyste-api": "^1.1.5",
     "ascii-table": "^0.0.9",
     "axios": "^1.2.1",
+    "canvacord": "^5.2.3",
     "canvafy": "^2.1.0",
     "canvas": "^2.10.2",
     "colors": "^1.4.0",
