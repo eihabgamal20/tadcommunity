@@ -1,4 +1,8 @@
- 
+//All rights reserved to the  TURBO and ABO FARGHALY  //
+// TURBO ==  TURBO#9890   -- ABO FARGHALY == ABO FARGHALY#1222 // 
+//Developer tools === https://discord.gg/Developer-tools //
+//We do not allow the transfer or use of this code at all// 
+
 const { MessageButton, MessageActionRow, MessageEmbed, MessageSelectMenu } = require("discord.js");
 const { glob } = require("glob");
 const { promisify } = require("util");
@@ -31,55 +35,55 @@ module.exports = {
 							label: 'Information',
 							description: 'To view the info commands',
 							value: 'information',
-              emoji: '992056774335135864',
+              emoji: '<a:Information:1058964136228302909>',
 						},
             {
 							label: 'Owner',
 							description: 'To view the owner commands',
 							value: 'owner',
-              emoji: '992056774335135864',
+              emoji: '<:verifieddev:790152986382303253>',
             },
             {
 							label: 'Admin',
 							description: 'To view the admin commands',
 							value: 'admin',
-              emoji: '992056774335135864',
+              emoji: '<:admin_emoji:788429031926005790>',
             },
             {
 							label: 'General',
 							description: 'To view the general commands',
 							value: 'general',
-              emoji: '992056774335135864',
+              emoji: '<a:Moderation:1058964006133579786>',
             },
              {
 							label: 'Activities',
 							description: 'To view the Activities commands',
 							value: 'activities',
-              emoji: '992056774335135864',
+              emoji: '<:success:788438144818217000>',
             },
             {
 							label: 'Games',
 							description: 'To view the Games commands',
 							value: 'games',
-              emoji: '992056774335135864',
+              emoji: '<:games_emoji:788428825745817611>',
             },
             {
 							label: 'Fun',
 							description: 'To view the FUN commands',
 							value: 'fun',
-              emoji: '992056774335135864',
+              emoji: '<a:fun:1058964138220584970>',
             },
             {
 							label: 'Music',
 							description: 'To view the music commands',
 							value: 'music',
-              emoji: '992056774335135864',
+              emoji: '<:speaker:790146754645196800>',
             },
 						{
 				  		label: 'Delete list',
 			  			description: 'Delete messages list',
 				  		value: 'delete',
-             emoji:'992056774335135864',
+             emoji:'<:donotdisturb:790132081136893962>',
             }])
     
    let row = new MessageActionRow()
