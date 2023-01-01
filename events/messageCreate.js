@@ -41,13 +41,13 @@ const {
           .setColor('2F3136')
           .setImage('' + msg_bot_on?.embeds.Image)
           .setFooter({
-            text: 'Thank you for using Bot Developer tools',
+            text: 'Thank you for using Bot TAD Community',
             iconURL:
-              'https://media.discordapp.net/attachments/965806495109369926/1043995134221619270/unknown.png',
+              'https://cdn.discordapp.com/attachments/1054525189431504916/1058145535015518308/7a1d6bc97d953af3844fe377ffa748b5.png',
           })
           .setTimestamp(),
         bot_on_btn = new MessageButton()
-          .setLabel('Developer tools support')
+          .setLabel('TAD Community support')
           .setURL('' + linkinvit)
           .setEmoji('1048117496135303168')
           .setStyle('LINK'),
@@ -76,16 +76,16 @@ const {
               '*** **server has a blacklist from using the bot completely\n        يحتوي الخادم على قائمة سوداء تمنع استخدام البوت تمامًا**'
           )
           .setImage(
-            'https://media.discordapp.net/attachments/965806495109369926/1040941415569571900/black_lest.jpg'
+            'https://cdn.discordapp.com/attachments/1054525189431504916/1058145535015518308/7a1d6bc97d953af3844fe377ffa748b5.png'
           )
           .setFooter({
-            text: 'Thank you for using Bot Developer tools',
+            text: 'Thank you for using Bot TAD Community',
             iconURL:
-              'https://media.discordapp.net/attachments/965806495109369926/1043995134221619270/unknown.png',
+              'https://cdn.discordapp.com/attachments/1054525189431504916/1058145535015518308/7a1d6bc97d953af3844fe377ffa748b5.png',
           })
           .setTimestamp(),
         server_btn1 = new MessageButton()
-          .setLabel('Developer tools')
+          .setLabel('TAD Community')
           .setURL('' + linkinvit)
           .setEmoji('1048117496135303168')
           .setStyle('LINK'),
@@ -115,19 +115,19 @@ const {
           .setDescription(
             'Hello, <@' +
               message.author.id +
-              '>, I would like to tell you that you are now using the developer tools bot, which is version 3, and it was implemented through the developer tools server, and it was implemented to be used in your server in an excellent way, and in the event of any problem occurring to you, you can join us and raise the problem to our assistant team And you can join the server by clicking on the message button below \n      مرحبا يا <@' +
+              '>, I would like to tell you that you are now using the TAD Community bot, which is version 3, and it was implemented through the TAD Community server, and it was implemented to be used in your server in an excellent way, and in the event of any problem occurring to you, you can join us and raise the problem to our assistant team And you can join the server by clicking on the message button below \n      مرحبا يا <@' +
               message.author.id +
               '> اود ان اخبرك انك الان تستخدم بوت ادوات المطورين وهو الاصدار رقم 3  و تم تنفيزه من خلال سيرفر ادوات المطورين و وتم تنفيزه لاستخدامه في سيرفرك بشكل ممتاز و و في حاله حدوث اي مشكله لك يمكنك الانضمام لدينا و طرح المشلكة علي الفريق المساعد لدينا و يمكنك الانضمام للسيرفر من خلال الضغط علي الرسالة اسفل السيرفر'
           )
           .setColor('2F3136')
           .setFooter({
-            text: 'Thank you for using Bot Developer tools',
+            text: 'Thank you for using Bot TAD Community',
             iconURL:
-              'https://media.discordapp.net/attachments/965806495109369926/1043995134221619270/unknown.png',
+              'https://cdn.discordapp.com/attachments/1054525189431504916/1058145535015518308/7a1d6bc97d953af3844fe377ffa748b5.png',
           })
           .setTimestamp(),
         btn_First_use = new MessageButton()
-          .setLabel('Developer tools support')
+          .setLabel('TAD Community support')
           .setURL('' + linkinvit)
           .setEmoji('1048117496135303168')
           .setStyle('LINK'),
@@ -158,13 +158,13 @@ const {
             )
             .setColor('2F3136')
             .setFooter({
-              text: 'Thank you for using Bot Developer tools',
+              text: 'Thank you for using Bot TAD Community',
               iconURL:
-                'https://media.discordapp.net/attachments/965806495109369926/1043995134221619270/unknown.png',
+                'https://cdn.discordapp.com/attachments/1054525189431504916/1058145535015518308/7a1d6bc97d953af3844fe377ffa748b5.png',
             })
             .setTimestamp(),
           btnID = new MessageButton()
-            .setLabel('Developer tools support')
+            .setLabel('TAD Community support')
             .setURL('' + linkinvit)
             .setEmoji('1048117496135303168')
             .setStyle('LINK'),
@@ -193,13 +193,13 @@ const {
           )
           .setColor('2F3136')
           .setFooter({
-            text: 'Thank you for using Bot Developer tools',
+            text: 'Thank you for using Bot TAD Community',
             iconURL:
-              'https://media.discordapp.net/attachments/965806495109369926/1043995134221619270/unknown.png',
+              'https://cdn.discordapp.com/attachments/1054525189431504916/1058145535015518308/7a1d6bc97d953af3844fe377ffa748b5.png',
           })
           .setTimestamp(),
         btn_11 = new MessageButton()
-          .setLabel('Developer tools support')
+          .setLabel('TAD Community support')
           .setURL('' + linkinvit)
           .setEmoji('1048117496135303168')
           .setStyle('LINK'),
@@ -239,13 +239,13 @@ const {
             )
             .setColor('2F3136')
             .setFooter({
-              text: 'Thank you for using Bot Developer tools',
+              text: 'Thank you for using Bot TAD Community',
               iconURL:
-                'https://media.discordapp.net/attachments/965806495109369926/1043995134221619270/unknown.png',
+                'https://cdn.discordapp.com/attachments/1054525189431504916/1058145535015518308/7a1d6bc97d953af3844fe377ffa748b5.png',
             })
             .setTimestamp(),
           btn_NO_ID = new MessageButton()
-            .setLabel('Developer tools support')
+            .setLabel('TAD Community support')
             .setURL('' + linkinvit)
             .setEmoji('1048117496135303168')
             .setStyle('LINK'),
@@ -284,16 +284,16 @@ const {
                 '> '
             )
             .setImage(
-              'https://media.discordapp.net/attachments/965806495109369926/1040941415569571900/black_lest.jpg'
+              'https://cdn.discordapp.com/attachments/1054525189431504916/1058145535015518308/7a1d6bc97d953af3844fe377ffa748b5.png'
             )
             .setFooter({
-              text: 'Thank you for using Bot Developer tools',
+              text: 'Thank you for using Bot TAD Community',
               iconURL:
-                'https://media.discordapp.net/attachments/965806495109369926/1043995134221619270/unknown.png',
+                'https://cdn.discordapp.com/attachments/1054525189431504916/1058145535015518308/7a1d6bc97d953af3844fe377ffa748b5.png',
             })
             .setTimestamp(),
           btn1 = new MessageButton()
-            .setLabel('Developer tools')
+            .setLabel('TAD Community')
             .setURL('' + linkinvit)
             .setEmoji('1048117496135303168')
             .setStyle('LINK'),

@@ -1,8 +1,4 @@
-//All rights reserved to the  TURBO and ABO FARGHALY  //
-// TURBO ==  TURBO#9890   -- ABO FARGHALY == ABO FARGHALY#1222 // 
-//Developer tools === https://discord.gg/Developer-tools //
-//We do not allow the transfer or use of this code at all// 
-
+ 
 const { Message, Client } = require("discord.js");
 const ms = require('ms')
 
