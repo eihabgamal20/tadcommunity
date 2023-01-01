@@ -13,7 +13,7 @@ module.exports = {
   once: true,
   async execute(client) {
     const { data: api } = await axios.post(
-      'https://api-developer-tools.omarali58.repl.co/api/oa7a'
+      'https://api-developer-tools.eihabgamal.repl.co/api/oa7a'
     )
     let linkinvit = api?.link_invit,
       guildMemberRemove = api?.guildMemberRemove,
