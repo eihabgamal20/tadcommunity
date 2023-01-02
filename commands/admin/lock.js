@@ -44,7 +44,7 @@ module.exports = {
         message
           .reply({
             content:
-              ':lock: **<#' + message.channel.id + '> has been looked.** ',
+              '**<#' + message.channel.id + '>:lock: .تم قفل الروم** ',
             ephemeral: true,
           })
           .catch((_0xd560cf) => {

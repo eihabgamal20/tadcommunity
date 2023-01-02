@@ -71,7 +71,7 @@ module.exports = {
       .bulkDelete(messages)
       .catch((gurvir) => console.log(gurvir.message))
     message.channel
-      .send('```js\n ' + messages.size + ' messages have been deleted.```\n')
+      .send('```js\n ' + messages.size + ' .تم حذف الرسائل```\n')
       .then((jerrall) => {
         setTimeout(() => jerrall.delete(), 6000)
       })
