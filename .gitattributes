@@ -3,3 +3,7 @@
 .env
 index.js
 .inex.js
+
+.json/config.json
+
+json/config.json
