@@ -35,55 +35,55 @@ module.exports = {
 							label: 'Information',
 							description: 'To view the info commands',
 							value: 'information',
-              emoji: '<a:Information:1058964136228302909>',
+              emoji: '992056774335135864',
 						},
             {
 							label: 'Owner',
 							description: 'To view the owner commands',
 							value: 'owner',
-              emoji: '<:verifieddev:790152986382303253>',
+              emoji: '992056774335135864',
             },
             {
 							label: 'Admin',
 							description: 'To view the admin commands',
 							value: 'admin',
-              emoji: '<:admin_emoji:788429031926005790>',
+              emoji: '992056774335135864',
             },
             {
 							label: 'General',
 							description: 'To view the general commands',
 							value: 'general',
-              emoji: '<a:Moderation:1058964006133579786>',
+              emoji: '992056774335135864',
             },
              {
 							label: 'Activities',
 							description: 'To view the Activities commands',
 							value: 'activities',
-              emoji: '<:success:788438144818217000>',
+              emoji: '992056774335135864',
             },
             {
 							label: 'Games',
 							description: 'To view the Games commands',
 							value: 'games',
-              emoji: '<:games_emoji:788428825745817611>',
+              emoji: '992056774335135864',
             },
             {
 							label: 'Fun',
 							description: 'To view the FUN commands',
 							value: 'fun',
-              emoji: '<a:fun:1058964138220584970>',
+              emoji: '992056774335135864',
             },
             {
 							label: 'Music',
 							description: 'To view the music commands',
 							value: 'music',
-              emoji: '<:speaker:790146754645196800>',
+              emoji: '992056774335135864',
             },
 						{
 				  		label: 'Delete list',
 			  			description: 'Delete messages list',
 				  		value: 'delete',
-             emoji:'<:donotdisturb:790132081136893962>',
+             emoji:'992056774335135864',
             }])
     
    let row = new MessageActionRow()
@@ -93,20 +93,22 @@ module.exports = {
         .addComponents(
             new MessageButton()
   .setStyle('LINK')
-  .setLabel('TAD Community')
-  .setURL(`https://discord.gg/tw2MFH5UJu`))
+  .setLabel('Invite Bot')
+  .setURL(`https://discord.com/oauth2/authorize?client_id=${client.user.id}&permissions=8&scope=bot%20applications.commands`))
     
        .addComponents(
             new MessageButton()
   .setStyle('LINK')
-  .setLabel('TAD Community')
-  .setURL(`https://discord.gg/tw2MFH5UJu`))
+  .setLabel('Server Support')
+  .setURL(`https://discord.gg/WxGZK8SsxM`))
       
     let embed = new MessageEmbed()    
       
-    .setDescription(`**TAD Community**`)
+    .setDescription(`**The bot is programmed by 𝑬𝑳 𝑩𝑶𝑩 البوب#4883**
 
-      .setImage(`https://cdn.discordapp.com/attachments/1054525189431504916/1058145535015518308/7a1d6bc97d953af3844fe377ffa748b5.png`)
+https://github.com/eihabgamal20`)
+
+      .setImage(`https://media.discordapp.net/attachments/910188125190516820/1062367307566956624/7a1d6bc97d953af3844fe377ffa748b5.png`)
 
 .setColor(message.guild.me.displayHexColor)
       .setTimestamp()

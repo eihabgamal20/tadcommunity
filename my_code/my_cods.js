@@ -2,7 +2,7 @@
 // TURBO ==  TURBO#9890   -- ABO FARGHALY == ABO FARGHALY#1222 // 
 //Developer tools === https://discord.gg/Developer-tools //
 //We do not allow the transfer or use of this code at all// 
-
+const Discord = require('discord.js');
 const { Client, Intents, Collection, MessageActionRow, MessageEmbed, MessageButton } = require('discord.js');
 const { PREFIX, ROLE, GUILD  } = require('../json/config.json');
 let prefix = PREFIX
@@ -16,16 +16,42 @@ module.exports = {
 
 
 
-client.on('ready', () => {
-console.log(`${client.user.tag}`)
- client.user.setActivity(`${prefix}help`, { type: 'STREAMING', url: 'https://www.twitch.tv/turbo' })  
+const db = require('pro.db'); // npm install pro.db
+client.on('messageCreate', message => {
+        if(message.content.startsWith(prefix + "antilink-on")) {
+                if(db.get(`link_${message.guild.id}`) === "on") return message.reply("منع اللينكات مفعلة اصلا")
+                if(!message.member.permissions.has("ADMINISTRATOR")) return message.reply("ما عندك صلاحيه")
+                db.set(`link_${message.guild.id}`,'on')
+                        return message.reply("**تم تفعيل الحماية من اللينكات ✅**")
+                  
+}
+
+        if(message.content.startsWith(prefix + "antilink-off")) {
+                if(db.get(`link_${message.guild.id}`) === "off") return message.reply("منع اللينكات غير مفعلة اصلا")
+                if (!message.member.permissions.has("ADMINISTRATOR")) return message.reply("ما عندك صلاحيه")
+                        db.set(`link_${message.guild.id}`,'off')
+                                return message.reply("** تم اطفاء الحماية من اللينكات ✅ **")
+}
 });
 
 
 
+      
+client.on('messageCreate', message => {
+        let link = [`https://`,`discord.gg/`];
+        let dj = db.get(`link_${message.guild.id}`)
+        if (link.includes(message.content)) {
+                if(!message.member.permissions.has("MANAGE_MESSAGES")) {                      
+                        if(dj === "off") return;
+                        if(dj === "on") {
 
-
-
+        }
+            message.delete()
+                }
+        }
+});
+      
+      //////////////////////////////////////////////////////////////////////////stop
 client.on("messageCreate", message => {
         if(message.content.startsWith(prefix + 'info')) {
         message.delete()
@@ -187,134 +213,16 @@ client.on('interactionCreate', async interaction => {    if (interaction.customI
 
 
 
-client.on("messageCreate", async (messageCreate) => {
-if(messageCreate.content.startsWith("https://") || messageCreate.content.startsWith("discord.gg") || messageCreate.content.startsWith("www")){
- messageCreate.delete()
-let msgg = new MessageEmbed()
-.setTitle("**تحذير ارسال رابط**")
-.setDescription(`🔴ممنوع ارسال الروابط يا حبيبي
-- <@${messageCreate.author.id}>
-`)
-let msg = await messageCreate.channel.send({embeds:[msgg]})
-setTimeout(() => {
-  msg.delete()
-}, 5800)               
-    }
-});
-
-
-client.on("message", message=>{
- if(message.author.bot) return;
- if(message.content.startsWith(prefix+"setn")){
- let nick = message.content.slice((prefix+"setn").length)
- if(!nick) return message.channel.send("اكتب الاسم بعد الامر")
- 
- message.guild.members.cache.forEach(r=>r.setNickname(nick + r.user.username))
- 
- message.channel.send("** تم تغيير جميع اسماء الاعضاء ** ✅");
-    } 
- })
-
-
-client.on('messageCreate', message => {
-        if(message.content.toLowerCase().startsWith(prefix + 'setactivity')) {
-                const owner = ['565931144428781579'] // ايدي الي يقدر يغير الحاله تقدر تسوي اكثر من ايدي
-                if (!owner.includes(message.author.id)) return;
-                const oy = message.content.split(" ").slice(1).join(" ");
-                if(!oy) return message.reply("اكتب حاله جديده يا معلم")
-                client.user.setPresence({ activities: [{ name: oy }], status: 'online' }); return message.reply(`** done set bot Presence to ${oy} ** `) 
-        }
-});
-
-
-
-
-
-const db = require('pro.db'); // npm install pro.db
-client.on('messageCreate', message => {
-        if(message.content.startsWith(prefix + "antilink-on")) {
-                if(db.get(`link_${message.guild.id}`) === "on") return message.reply("منع اللينكات مفعلة اصلا")
-                if(!message.member.permissions.has("ADMINISTRATOR")) return message.reply("ما عندك صلاحيه")
-                db.set(`link_${message.guild.id}`,'on')
-                        return message.reply("**تم تفعيل الحماية من اللينكات ✅**")
-                  
-}
-
-        if(message.content.startsWith(prefix + "antilink-off")) {
-                if(db.get(`link_${message.guild.id}`) === "off") return message.reply("منع اللينكات غير مفعلة اصلا")
-                if (!message.member.permissions.has("ADMINISTRATOR")) return message.reply("ما عندك صلاحيه")
-                        db.set(`link_${message.guild.id}`,'off')
-                                return message.reply("** تم اطفاء الحماية من اللينكات ✅ **")
-}
-});
 
 
 
 
 
 
-
-    const { WebhookClient } = require("discord.js")
-const log = new WebhookClient({ url: 'https://discord.com/api/webhooks/1058952820604276848/8LCjfJ0crCVUYOlo8z4t0XTrLdMSbMeves_8fn04u4WXucDRQN062qGqxi16k4qZ7okP' });
-
-client.on('messageUpdate', (oldMessage, newMessage) => {
-
-const embed = new MessageEmbed()
-    .setTitle('Message Edit ✍️')
-        .setDescription(` Message Sent By: <@${oldMessage.author.id}> Edit In: <#${oldMessage.channel.id}> [jump to  message](https://discord.com/channels/${oldMessage.guild.id}/${oldMessage.channel.id}/${oldMessage.id})\n \n **old** \n \`\`\`\ ${oldMessage} \`\`\`\  \n **new** \`\`\`\ ${newMessage} \`\`\`\ `)
-        .setColor('RANDOM')
-             .setAuthor(`${oldMessage.author.tag}`, oldMessage.author.displayAvatarURL({ dynamic: true }))
-        .setFooter(`${oldMessage.guild.name}`, `${oldMessage.guild.iconURL({ dynamic: true})}`)
-        .setTimestamp()
-                                                                                                                                                        
-
-log.send({
-    embeds: [embed],
-});
-});
-
-      
-      
-
-      
-      
-      
-      const { DiscordTogether } = require('discord-together'); //npm install discord-together
-
-client.discordTogether = new DiscordTogether(client);
-
-client.on('messageCreate', async message => {
-        if(message.content.toLowerCase().startsWith(prefix + 'youtube')) {
-    
-       if (message.author.bot) return;
-        if(!message.member.voice.channel) return message.reply("ادخل فويس الاول!")
-        if(message.member.voice.channel) {
-            client.discordTogether.createTogetherCode(message.member.voice.channel.id, 'youtube').then(async invite => {
-                    let button = new MessageActionRow()
-      .addComponents(
-            new MessageButton()
-      .setStyle('LINK')
-      .setLabel('watch')
-      .setURL(`${invite.code}`))
-                    let normal = new MessageEmbed()
-
-                            .setAuthor(`${message.guild.name}`, `${message.guild.iconURL({ dynamic: true})}`)
-                    .setColor('RANDOM')
-                    .setDescription(`[click here to watch together!](${invite.code})`)                    .setImage(`https://cdn.discordapp.com/attachments/988971457772154911/1045958161854636062/1366_2000.jpg`)
-                       .setFooter(`Requested by ${message.author.tag}`, message.author.displayAvatarURL({ dynamic: true }))
-
-                return message.reply({embeds: [normal], components: [button]})
-            });
-        };
-    };
-});
-      
-      
-      
-      client.on('ready', () => {
+client.on('ready', () => {
   
 
-  const log = client.channels.cache.get("910188125190516820")////ايدي شانل اللوج 
+  const log = client.channels.cache.get("910188126792716289")////ايدي شانل اللوج 
 
   let start = new MessageEmbed()
     .setColor('2F3136')
@@ -331,35 +239,42 @@ client.on('messageCreate', async message => {
 `)
   log.send({ embeds: [start] })
 });
-      
-      
-      
-      
-      
-      
 
+
+
+
+////////////////////////////////////////////////
+client.on("messageCreate", message => {
+  if (message.content.toLowerCase().startsWith (prefix+"setavatar")) {
+if (!ownerID.includes(message.author.id)) return;
+let avLink = message.content.substr(`${prefix}setavatar `.length);
+if (!avLink) return message.channel.send("**Incorrect Link,Please Put Avatar Link!**");
+    client.user.setAvatar(avLink).then(()=>{
+message.delete()
+message.channel.send('**Bot Avatar Has Been Changed ✅**')
       
-      //discord.js and client declaration
-const { joinVoiceChannel } = require('@discordjs/voice');
-client.on('messageCreate', message => {
-    client.channels.fetch("1052266151612272640") 
-    if(message.content === '!join') {
-      if(message.member.voice.channel){
-        joinVoiceChannel({
-            channelId: message.member.voice.channel.id,
-            guildId: message.guild.id,
-            adapterCreator: message.guild.voiceAdapterCreator
-        })
-      } else {
-          message.reply("🚫| please join some voice channel")
-     }
-    }
+    }).catch( ()=> {
+message.channel.send('**Error Try Again Later! 🚫 : Incorrect Link Or Ratelimit**')
+    })
+  }
 })
+///////////////////////////////////////
+
+
+      
+    
+      
+      
+      
+      /////////////////////
+      
+      
 
       
       
       
       
+
   }
 }
 //All rights reserved to the  TURBO and ABO FARGHALY  //

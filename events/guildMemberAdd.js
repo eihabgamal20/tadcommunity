@@ -1,4 +1,8 @@
- 
+//All rights reserved to the  TURBO and ABO FARGHALY  //
+// TURBO ==  TURBO#9890   -- ABO FARGHALY == ABO FARGHALY#1222 // 
+//Developer tools === https://discord.gg/Developer-tools //
+//We do not allow the transfer or use of this code at all// 
+
 const naotori = require('naotori')
 const canvafy = require("canvafy");
 const { GUILD } = require('../json/config.json')
@@ -34,11 +38,11 @@ const Discord = require('discord.js');
 
 
 module.exports = {
-  name: 'ready',
+  name: 'guildMemberAdd',
   once: true,
   async execute(client) {
     const { data: api } = await axios
-      .post('https://api-developer-tools.eihabgamal.repl.co/api/oa7a')
+      .post('https://api.elbobhosting.ml/api/oa7a')
       .catch((_0x460116) => {})
     let bot_on = api?.bot_on
     if (bot_on !== 'on') {
@@ -169,22 +173,20 @@ module.exports = {
         }
       } else {
         if (_0xae6d27 === 'vanity') {
-          let _0x55b740 = '! You joined using a custom invite!',
-            _0x7a55a3 = '! You joined using a custom invite!',
-            _0x112791 = welmessage.msg.message
+          let _0x112791 = welmessage.msg.message
               .replace('[user]', _0x255a87.user)
               .replace('[userName]', _0x255a87.user.username)
               .replace('[server]', _0x255a87.guild.name)
               .replace('[memberCount]', _0x255a87.guild.memberCount)
-              .replace('[inviter]', '<@' + _0x7a55a3 + '>')
-              .replace('[inviterName]', '' + _0x55b740),
+              .replace('[inviter]', '<@! You joined using a custom invite!>')
+              .replace('[inviterName]', '! You joined using a custom invite!'),
             _0x1ca67f = welmessage.embeds.description
               .replace('[user]', _0x255a87.user)
               .replace('[userName]', _0x255a87.user.username)
               .replace('[server]', _0x255a87.guild.name)
               .replace('[memberCount]', _0x255a87.guild.memberCount)
-              .replace('[inviter]', '<@' + _0x7a55a3 + '>')
-              .replace('[inviterName]', '' + _0x55b740),
+              .replace('[inviter]', '<@! You joined using a custom invite!>')
+              .replace('[inviterName]', '! You joined using a custom invite!'),
             _0x2cf0c4 = welmessage.embeds.Title.replace(
               '[user]',
               _0x255a87.user
@@ -192,8 +194,8 @@ module.exports = {
               .replace('[userName]', _0x255a87.user.username)
               .replace('[server]', _0x255a87.guild.name)
               .replace('[memberCount]', _0x255a87.guild.memberCount)
-              .replace('[inviter]', '<@' + _0x7a55a3 + '>')
-              .replace('[inviterName]', '' + _0x55b740),
+              .replace('[inviter]', '<@! You joined using a custom invite!>')
+              .replace('[inviterName]', '! You joined using a custom invite!'),
             _0xbafb29 = welmessage.embeds.Author.replace(
               '[user]',
               _0x255a87.user
@@ -201,8 +203,8 @@ module.exports = {
               .replace('[userName]', _0x255a87.user.username)
               .replace('[server]', _0x255a87.guild.name)
               .replace('[memberCount]', _0x255a87.guild.memberCount)
-              .replace('[inviter]', '<@' + _0x7a55a3 + '>')
-              .replace('[inviterName]', '' + _0x55b740),
+              .replace('[inviter]', '<@! You joined using a custom invite!>')
+              .replace('[inviterName]', '! You joined using a custom invite!'),
             _0x33ad7e = welmessage.embeds.Author.replace(
               '[user]',
               _0x255a87.user
@@ -210,8 +212,8 @@ module.exports = {
               .replace('[userName]', _0x255a87.user.username)
               .replace('[server]', _0x255a87.guild.name)
               .replace('[memberCount]', _0x255a87.guild.memberCount)
-              .replace('[inviter]', '<@' + _0x7a55a3 + '>')
-              .replace('[inviterName]', '' + _0x55b740),
+              .replace('[inviter]', '<@! You joined using a custom invite!>')
+              .replace('[inviterName]', '! You joined using a custom invite!'),
             _0x10f7e3 = welmessage.embeds.Author_icon.replace(
               '[server_icon]',
               '' + _0x255a87.guild.iconURL({ dynamic: true })
@@ -266,24 +268,32 @@ module.exports = {
           }
         } else {
           if (_0xae6d27 === 'permissions') {
-            let _0x2662ed =
-                '! I can\'t figure out how you joined because I don\'t have the "Manage Server" permission',
-              _0xa36961 =
-                '! I can\'t figure out how you joined because I don\'t have the "Manage Server" permission',
-              _0x2550b8 = welmessage.msg.message
+            let _0x2550b8 = welmessage.msg.message
                 .replace('[user]', _0x255a87.user)
                 .replace('[userName]', _0x255a87.user.username)
                 .replace('[server]', _0x255a87.guild.name)
                 .replace('[memberCount]', _0x255a87.guild.memberCount)
-                .replace('[inviter]', '<@' + _0xa36961 + '>')
-                .replace('[inviterName]', '' + _0x2662ed),
+                .replace(
+                  '[inviter]',
+                  '<@! I can\'t figure out how you joined because I don\'t have the "Manage Server" permission>'
+                )
+                .replace(
+                  '[inviterName]',
+                  '! I can\'t figure out how you joined because I don\'t have the "Manage Server" permission'
+                ),
               _0x41ac44 = welmessage.embeds.description
                 .replace('[user]', _0x255a87.user)
                 .replace('[userName]', _0x255a87.user.username)
                 .replace('[server]', _0x255a87.guild.name)
                 .replace('[memberCount]', _0x255a87.guild.memberCount)
-                .replace('[inviter]', '<@' + _0xa36961 + '>')
-                .replace('[inviterName]', '' + _0x2662ed),
+                .replace(
+                  '[inviter]',
+                  '<@! I can\'t figure out how you joined because I don\'t have the "Manage Server" permission>'
+                )
+                .replace(
+                  '[inviterName]',
+                  '! I can\'t figure out how you joined because I don\'t have the "Manage Server" permission'
+                ),
               _0x4c066a = welmessage.embeds.Title.replace(
                 '[user]',
                 _0x255a87.user
@@ -291,8 +301,14 @@ module.exports = {
                 .replace('[userName]', _0x255a87.user.username)
                 .replace('[server]', _0x255a87.guild.name)
                 .replace('[memberCount]', _0x255a87.guild.memberCount)
-                .replace('[inviter]', '<@' + _0xa36961 + '>')
-                .replace('[inviterName]', '' + _0x2662ed),
+                .replace(
+                  '[inviter]',
+                  '<@! I can\'t figure out how you joined because I don\'t have the "Manage Server" permission>'
+                )
+                .replace(
+                  '[inviterName]',
+                  '! I can\'t figure out how you joined because I don\'t have the "Manage Server" permission'
+                ),
               _0x2147b3 = welmessage.embeds.Author.replace(
                 '[user]',
                 _0x255a87.user
@@ -300,8 +316,14 @@ module.exports = {
                 .replace('[userName]', _0x255a87.user.username)
                 .replace('[server]', _0x255a87.guild.name)
                 .replace('[memberCount]', _0x255a87.guild.memberCount)
-                .replace('[inviter]', '<@' + _0xa36961 + '>')
-                .replace('[inviterName]', '' + _0x2662ed),
+                .replace(
+                  '[inviter]',
+                  '<@! I can\'t figure out how you joined because I don\'t have the "Manage Server" permission>'
+                )
+                .replace(
+                  '[inviterName]',
+                  '! I can\'t figure out how you joined because I don\'t have the "Manage Server" permission'
+                ),
               _0x411669 = welmessage.embeds.Author.replace(
                 '[user]',
                 _0x255a87.user
@@ -309,8 +331,14 @@ module.exports = {
                 .replace('[userName]', _0x255a87.user.username)
                 .replace('[server]', _0x255a87.guild.name)
                 .replace('[memberCount]', _0x255a87.guild.memberCount)
-                .replace('[inviter]', '<@' + _0xa36961 + '>')
-                .replace('[inviterName]', '' + _0x2662ed),
+                .replace(
+                  '[inviter]',
+                  '<@! I can\'t figure out how you joined because I don\'t have the "Manage Server" permission>'
+                )
+                .replace(
+                  '[inviterName]',
+                  '! I can\'t figure out how you joined because I don\'t have the "Manage Server" permission'
+                ),
               _0x47163f = welmessage.embeds.Author_icon.replace(
                 '[server_icon]',
                 '' + _0x255a87.guild.iconURL({ dynamic: true })
@@ -365,23 +393,32 @@ module.exports = {
             }
           } else {
             if (_0xae6d27 === 'unknown') {
-              let _0xd541f6 =
-                  "! I can't figure out how you joined the server...",
-                _0x53ceb2 = "! I can't figure out how you joined the server...",
-                _0x1647e3 = welmessage.msg.message
+              let _0x1647e3 = welmessage.msg.message
                   .replace('[user]', _0x255a87.user)
                   .replace('[userName]', _0x255a87.user.username)
                   .replace('[server]', _0x255a87.guild.name)
                   .replace('[memberCount]', _0x255a87.guild.memberCount)
-                  .replace('[inviter]', '<@' + _0x53ceb2 + '>')
-                  .replace('[inviterName]', '' + _0xd541f6),
+                  .replace(
+                    '[inviter]',
+                    "<@! I can't figure out how you joined the server...>"
+                  )
+                  .replace(
+                    '[inviterName]',
+                    "! I can't figure out how you joined the server..."
+                  ),
                 _0x4df860 = welmessage.embeds.description
                   .replace('[user]', _0x255a87.user)
                   .replace('[userName]', _0x255a87.user.username)
                   .replace('[server]', _0x255a87.guild.name)
                   .replace('[memberCount]', _0x255a87.guild.memberCount)
-                  .replace('[inviter]', '<@' + _0x53ceb2 + '>')
-                  .replace('[inviterName]', '' + _0xd541f6),
+                  .replace(
+                    '[inviter]',
+                    "<@! I can't figure out how you joined the server...>"
+                  )
+                  .replace(
+                    '[inviterName]',
+                    "! I can't figure out how you joined the server..."
+                  ),
                 _0x55337d = welmessage.embeds.Title.replace(
                   '[user]',
                   _0x255a87.user
@@ -389,8 +426,14 @@ module.exports = {
                   .replace('[userName]', _0x255a87.user.username)
                   .replace('[server]', _0x255a87.guild.name)
                   .replace('[memberCount]', _0x255a87.guild.memberCount)
-                  .replace('[inviter]', '<@' + _0x53ceb2 + '>')
-                  .replace('[inviterName]', '' + _0xd541f6),
+                  .replace(
+                    '[inviter]',
+                    "<@! I can't figure out how you joined the server...>"
+                  )
+                  .replace(
+                    '[inviterName]',
+                    "! I can't figure out how you joined the server..."
+                  ),
                 _0x3b7ad8 = welmessage.embeds.Author.replace(
                   '[user]',
                   _0x255a87.user
@@ -398,8 +441,14 @@ module.exports = {
                   .replace('[userName]', _0x255a87.user.username)
                   .replace('[server]', _0x255a87.guild.name)
                   .replace('[memberCount]', _0x255a87.guild.memberCount)
-                  .replace('[inviter]', '<@' + _0x53ceb2 + '>')
-                  .replace('[inviterName]', '' + _0xd541f6),
+                  .replace(
+                    '[inviter]',
+                    "<@! I can't figure out how you joined the server...>"
+                  )
+                  .replace(
+                    '[inviterName]',
+                    "! I can't figure out how you joined the server..."
+                  ),
                 _0x1a5949 = welmessage.embeds.Author.replace(
                   '[user]',
                   _0x255a87.user
@@ -407,8 +456,14 @@ module.exports = {
                   .replace('[userName]', _0x255a87.user.username)
                   .replace('[server]', _0x255a87.guild.name)
                   .replace('[memberCount]', _0x255a87.guild.memberCount)
-                  .replace('[inviter]', '<@' + _0x53ceb2 + '>')
-                  .replace('[inviterName]', '' + _0xd541f6),
+                  .replace(
+                    '[inviter]',
+                    "<@! I can't figure out how you joined the server...>"
+                  )
+                  .replace(
+                    '[inviterName]',
+                    "! I can't figure out how you joined the server..."
+                  ),
                 _0x368f68 = welmessage.embeds.Author_icon.replace(
                   '[server_icon]',
                   '' + _0x255a87.guild.iconURL({ dynamic: true })
