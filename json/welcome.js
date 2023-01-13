@@ -9,7 +9,7 @@ module.exports = {
   //on   off
   welcome_run: `on`,
 
-  CHANNEL: "1052297010142777465",
+  CHANNEL: "1063484500287430678",
   /*
   [user] - منشن العضو الجديد
   [userName] - اسم العضو الجديد بدون منشن
